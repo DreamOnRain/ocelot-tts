@@ -22,24 +22,48 @@ semantic textual similarity models for backend feedback.
 ---
 
 ## 2. Training
-
+  ```bash
   CUDA_VISIBLE_DEVICES=1,2,3 python train_ms.py -c configs/chinese.json -m chinese
+  ```
+  ```bash
   CUDA_VISIBLE_DEVICES=1,2,3 python train_ms.py -c configs/english_emotion.json -m english_emotion
+  ```
 
 ---
 
 ## 5. Inference
-
+  Chinese Demo
+  ```bash
   python3 ocelot.py Chinese '请问酒店怎么去' 0 'happy' 1
+  ```
+  English Demo
+  ```bash
   python3 ocelot.py English 'In order to approach people, you best learn how to greet them first' 0 'happy' 1
+  ```
 ---
 
 ## 6. Evaluation
+  ```bash
   python3 evluation.py
+  ```
+  ```bash
   python3 evluation_english.py
+  ```
 
 ---
 
-## Related Projects
+## Refernece
 
-For further details, visit the official [GPT-SoVITS GitHub Repository](https://github.com/RVC-Boss/GPT-SoVITS/tree/main?tab=readme-ov-file).
+> **Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech**\
+> Jaehyeon Kim, Jungil Kong, Juhee Son \
+> Paper: [https://arxiv.org/abs/2312.00752](https://arxiv.org/abs/2106.06103)
+
+
+@inproceedings{kim2021conditional,
+  title={Conditional variational autoencoder with adversarial learning for end-to-end text-to-speech},
+  author={Kim, Jaehyeon and Kong, Jungil and Son, Juhee},
+  booktitle={International Conference on Machine Learning},
+  pages={5530--5540},
+  year={2021},
+  organization={PMLR}
+}
