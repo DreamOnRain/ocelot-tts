@@ -31,7 +31,14 @@ semantic textual similarity models for backend feedback.
 
 ---
 
-## 5. Inference
+## 3. Preprocessing
+
+  Use preprocessing.py and chinese.py to do preprocessing.
+  Some logics is including in inference.
+  
+---
+
+## 4. Inference
   Chinese Demo
   ```bash
   python3 ocelot.py Chinese '请问酒店怎么去' 0 'happy' 1
@@ -42,7 +49,7 @@ semantic textual similarity models for backend feedback.
   ```
 ---
 
-## 6. Evaluation
+## 5. Evaluation
   ```bash
   python3 evluation.py
   ```
@@ -58,7 +65,7 @@ semantic textual similarity models for backend feedback.
 > Jaehyeon Kim, Jungil Kong, Juhee Son \
 > Paper: [https://arxiv.org/abs/2312.00752](https://arxiv.org/abs/2106.06103)
 
-
+```
 @inproceedings{kim2021conditional,
   title={Conditional variational autoencoder with adversarial learning for end-to-end text-to-speech},
   author={Kim, Jaehyeon and Kong, Jungil and Son, Juhee},
@@ -67,3 +74,4 @@ semantic textual similarity models for backend feedback.
   year={2021},
   organization={PMLR}
 }
+```
